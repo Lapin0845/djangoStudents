@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Студенты</h2>
+ <table>
+    <tr>{{ title }}</tr>
+     {% for t in table %}
+     <tr>
+         {% for one in t %}
+         <td>{{ one }}</td>
+         {% endfor %}
+     </tr>
+        {% endfor %}
+    </table>
+<form action="" method="get">
+    <input type="text" name="search" placeholder="Поис по имени или курсу">
+    <input type="submit" value="Поиск">
+</form>
+
+
+</body>
+</html>
